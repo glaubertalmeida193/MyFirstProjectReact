@@ -4,8 +4,10 @@ const CampoTexto = (props) => {
 
     const placeholderModificada = `${props.placeholder}...` 
 
+    //OnChange para receber o valor diigitado.
     const aoDigitado = (evento) => {
         props.aoAlterado(evento.target.value)
+        console.log(evento.target.value)
     }
 
     return (
