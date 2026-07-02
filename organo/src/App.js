@@ -43,8 +43,10 @@ function App() {
     }
   ]
 
+  //Declaro a variável
   const [colaboradores, setColaboradores] = useState([])
-
+  
+  //Crio a arrow funciont
   const aoNovoColaboradorAdicionado = (colaborador) => {
     // debugger|console.log(colaborador)
     // Push com render

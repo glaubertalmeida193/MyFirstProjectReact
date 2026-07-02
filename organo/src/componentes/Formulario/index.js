@@ -10,6 +10,7 @@ const Formulario = (props) => {
     const [nome, setNome] = useState('')
     const [sobrenome, setSobrenome] = useState('')
     const [cargo, setCargo] = useState('')
+    const [descricaoCargo, setdescricaoCargo] = useState('')
     const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
 
@@ -19,12 +20,14 @@ const Formulario = (props) => {
             nome,
             sobrenome,
             cargo,
+            descricaoCargo,
             imagem,
             time
         })
         setNome('')
         setSobrenome('')
         setCargo('')
+        setdescricaoCargo('')
         setImagem('')
         setTime('')
     }
@@ -53,6 +56,13 @@ const Formulario = (props) => {
                     placeholder="Digite seu cargo" 
                     valor={cargo}
                     aoAlterado={valor => setCargo(valor)}
+                />
+                <CampoTexto
+                    obrigatorio={false}
+                    label="Descrição cargo:"
+                    placeholder="Digite uma breve descrição do cargo" 
+                    valor={descricaoCargo}
+                    aoAlterado={valor => setdescricaoCargo(valor)}
                 />
                 <CampoTexto
                     label="Imagem"

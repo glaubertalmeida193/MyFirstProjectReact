@@ -1,6 +1,6 @@
 import './Colaborador.css'
 
-const Colaborador = ({ nome, sobrenome, imagem, cargo, corDeFundo }) => {
+const Colaborador = ({ nome, sobrenome, imagem, cargo, descricaoCargo, corDeFundo }) => {
 
     const concatNomeSobrenome = `${nome} ${sobrenome}` 
 
@@ -12,6 +12,7 @@ const Colaborador = ({ nome, sobrenome, imagem, cargo, corDeFundo }) => {
         <div className='rodape'>
             <h4>{concatNomeSobrenome}</h4>
             <h5>{cargo}</h5>
+            <h6>{descricaoCargo}</h6>
         </div>
     </div>)
 }
